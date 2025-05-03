@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sell Property - Apna Ghar</title>
+  <link rel="stylesheet" href="sell.css" />
+</head>
+<body>
+  <header>
+    <h1>Sell Your Property - Apna Ghar</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sell.html">Sell Property</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <form id="sellForm" onsubmit="submitForm(event)" enctype="multipart/form-data">
+    <label for="title">Property Title</label>
+    <input type="text" id="title" name="title" required />
+
+    <label for="beds">Number of Beds</label>
+    <input type="number" id="beds" name="beds" min="0" required />
+
+    <label for="baths">Number of Baths</label>
+    <input type="number" id="baths" name="baths" min="0" required />
+
+    <label for="size">Size (sqft)</label>
+    <input type="number" id="size" name="size" min="0" required />
+
+    <label for="price">Price ($)</label>
+    <input type="number" id="price" name="price" min="0" required />
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" rows="4" required></textarea>
+
+    <label for="images">Upload Images</label>
+    <input type="file" id="images" name="images" accept="image/*" multiple onchange="previewImages()" />
+
+    <div id="imagePreview" class="image-preview"></div>
+
+    <button type="submit">Submit Property</button>
+  </form>
+
+  <footer>
+    <p class="footer-text">
+      &copy; 2024 Apna Ghar. All rights reserved. Website by Group 2.
+    </p>
+  </footer>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      alert('Property submitted successfully! (This is a demo, no backend integration)');
+      document.getElementById('sellForm').reset();
+    }
+  </script>
+</body>
+</html>
