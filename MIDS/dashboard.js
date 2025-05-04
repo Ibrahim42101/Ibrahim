@@ -14,7 +14,7 @@ adminLoginForm.addEventListener('submit', (event) => {
   const adminId = document.getElementById('adminId').value;
   const adminPassword = document.getElementById('adminPassword').value;
 
-  // Hardcoded admin credentials
+  // Hardcoded Admin credentials
   const validAdminId = 'ibrahim';
   const validAdminPassword = 'baig';
 
