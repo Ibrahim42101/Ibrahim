@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Landing Page - TechNova</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">TechNova</a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Innovate Your Future with TechNova</h1>
+                    <p>Cutting-edge technology solutions designed to accelerate your business growth.</p>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Innovative technology" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80" alt="About TechNova" />
+                </div>
+                <div class="about-text">
+                    <h2>About TechNova</h2>
+                    <p>TechNova is dedicated to delivering innovative and reliable technology services that empower businesses to succeed in a rapidly evolving digital landscape.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container services-container">
+                <h2>Our Services</h2>
+                <div class="services-list">
+                    <div class="service-item">
+                        <img src="https://img.icons8.com/ios-filled/64/000000/cloud.png" alt="Cloud Solutions" />
+                        <h3>Cloud Solutions</h3>
+                        <p>Scalable and secure cloud services tailored to your business needs.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://img.icons8.com/ios-filled/64/000000/artificial-intelligence.png" alt="AI & Machine Learning" />
+                        <h3>AI & Machine Learning</h3>
+                        <p>Advanced AI solutions to transform your data into actionable insights.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="https://img.icons8.com/ios-filled/64/000000/privacy-policy.png" alt="Cybersecurity" />
+                        <h3>Cybersecurity</h3>
+                        <p>Comprehensive security strategies to protect your digital assets.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <h2>Contact Us</h2>
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook" class="social-icon">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/facebook-new.png" alt="Facebook" />
+                </a>
+                <a href="#" aria-label="Twitter" class="social-icon">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/twitter.png" alt="Twitter" />
+                </a>
+                <a href="#" aria-label="LinkedIn" class="social-icon">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                    <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram" />
+                </a>
+            </div>
+            <p>&copy; 2024 TechNova. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a.nav-link, a.btn-primary').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetID = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetID);
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
