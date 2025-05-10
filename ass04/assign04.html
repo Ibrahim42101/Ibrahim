@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Landing Page</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Welcome to Our Website</h1>
+        <p>Providing quality services since 2020.</p>
+        <img src="th.jpg" alt="Website Banner Image" />
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- About Section -->
+        <article id="about">
+            <h2>About Our Company</h2>
+            <p>We strive to deliver excellent service and customer satisfaction.</p>
+        </article>
+
+        <!-- Services Section -->
+        <article id="services">
+            <h2>Services We Offer</h2>
+            <ul>
+                <li>Business Consulting</li>
+                <li>Software Solutions</li>
+                <li>Customer Service</li>
+            </ul>
+        </article>
+
+        <!-- Pricing Section -->
+        <article id="pricing">
+            <h2>Our Pricing</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Cost</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Starter</td>
+                        <td>$15/month</td>
+                        <td>Basic features included</td>
+                    </tr>
+                    <tr>
+                        <td>Business</td>
+                        <td>$35/month</td>
+                        <td>Extended features and support</td>
+                    </tr>
+                    <tr>
+                        <td>Enterprise</td>
+                        <td>$60/month</td>
+                        <td>All features with premium support</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <!-- Contact Form Section -->
+        <article id="contact">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label><br />
+                <input type="text" id="name" name="name" required /><br /><br />
+
+                <label for="email">Email Address:</label><br />
+                <input type="email" id="email" name="email" required /><br /><br />
+
+                <label for="subject">Reason for Contact:</label><br />
+                <select id="subject" name="subject" required>
+                    <option value="">Select an option</option>
+                    <option value="inquiry">Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                </select><br /><br />
+
+                <label for="message">Your Message:</label><br />
+                <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+                <input type="submit" value="Send" />
+            </form>
+        </article>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+        <p>Email: contact@company.com</p>
+    </footer>
+
+</body>
+</html>
